@@ -1,4 +1,4 @@
 user-agent: *
 Disallow: /admin/
 
-Sitemap: https://www.pagalsongs.online/songs-sitemap.xml
+Sitemap: https://mobcup-ringtones.online/ringtones-sitemap.xml

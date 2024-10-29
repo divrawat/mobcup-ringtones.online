@@ -1,8 +1,8 @@
-export const DOMAIN = 'http://localhost:3000';
+// export const DOMAIN = 'http://localhost:3000';
 // export const BACKEND_DOMAIN = 'http://localhost:8000';
 
-// export const DOMAIN = 'https://mobcup-ringtones.online';
-export const BACKEND_DOMAIN = 'https://ringtones-backend.vercel.app/'
+export const DOMAIN = 'https://mobcup-ringtones.online';
+export const BACKEND_DOMAIN = 'https://ringtones-backend.vercel.app'
 
 
 

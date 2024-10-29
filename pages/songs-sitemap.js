@@ -45,13 +45,9 @@ export async function getServerSideProps() {
   }
 
   return { props: {} };
-}
 
-export default function Sitemap() {
-  return null;
 }
 */
-
 
 
 export default function Sitemap() { return null; }

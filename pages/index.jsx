@@ -139,13 +139,13 @@ const Index = ({ errorCode, songs, query, totalCount }) => {
 
   const head = () => (
     <Head>
-      <title>Mobcup: Free MP3 Ringtones Download</title>
+      <title>MobCup: Ultimate Destination For Ringtones</title>
       <meta name="description" content={DESCRIPTION} />
       <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
       <meta name="googlebot" content="noarchive" />
       <meta name="robots" content="noarchive" />
       <link rel="canonical" href={`${DOMAIN}`} />
-      <meta property="og:title" content="Mobcup: Free MP3 Ringtones Download" />
+      <meta property="og:title" content="MobCup: Ultimate Destination For Ringtones" />
       <meta property="og:description" content={DESCRIPTION} />
       <meta property="og:type" content="webiste" />
       <meta property="og:url" content={`${DOMAIN}`} />
@@ -192,7 +192,7 @@ const Index = ({ errorCode, songs, query, totalCount }) => {
 
 
 
-            {/* <h1 className={`${roboto.className}  text-3xl font-semibold mb-3 mt-5 text-center`}>All Songs</h1> */}
+            <h1 className={`${roboto.className}  text-2xl font-semibold mb-3 mt-5 text-center`}>MobCup: Ultimate Destination For Ringtones</h1>
             {/* <p className='text-center mb-3 font-bold'>{`Total Songs: ${totalCount}`}</p> */}
             {/* <p className='text-center font-bold mb-8'>{`Page ${currentPage}`}</p> */}
 

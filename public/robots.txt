@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /admin/
+
+Sitemap: https://www.pagalsongs.online/songs-sitemap.xml

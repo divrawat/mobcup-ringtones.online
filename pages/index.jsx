@@ -219,7 +219,7 @@ const Index = ({ errorCode, songs, query, totalCount }) => {
 
                   </Link>
                 </li>
-              )).slice(0, 100)}
+              )).slice(0, 30)}
             </ul>
 
 

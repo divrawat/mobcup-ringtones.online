@@ -109,9 +109,18 @@ const SongPage = ({ errorcode, response }) => {
 
 
     const categoryList = song?.Categories.split(',').map(category => category.trim());
-    // const title = song?.Name.split('-')[0].trim();
     const title = song?.Name.replace(/[-|,|–].*/, '').trim();
-
+    const slugify = (text) => {
+        return text
+            .toString()
+            .toLowerCase()
+            .replace(/\b(ringtone|ringtones)\b/g, '') // Remove "ringtone" and "ringtones"
+            .trim()
+            .replace(/\s+/g, '-')                    // Replace spaces with -
+            .replace(/[^\w-]+/g, '')                 // Remove all non-word chars
+            .replace(/--+/g, '-')                    // Replace multiple - with single -
+            .replace(/^-+|-+$/g, '');                // Trim hyphens from start/end
+    };
 
 
     return (
@@ -163,7 +172,7 @@ const SongPage = ({ errorcode, response }) => {
                             <div className='flex justify-center flex-wrap'>
                                 {categoryList.map((category, index) => (
                                     <button key={index} className=' border text-[12px] border-gray-400 px-2 py-1 m-1 rounded-md hover:scale-110 transition-transform'>
-                                        {category}
+                                        <Link href={`${DOMAIN}/search/${slugify(category)}?page=1`}> {category}</Link>
                                     </button>
                                 ))}
                             </div>
